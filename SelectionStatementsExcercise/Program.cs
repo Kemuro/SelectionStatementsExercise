@@ -51,12 +51,15 @@ namespace SelectionStatementsExcercise
                 Console.WriteLine();
                 Console.Write("Your choice: ");
 
+                //could use \n + to go to a new line instead of repeating Console.WriteLine
+
                 string contestantFavSubject = Console.ReadLine();
                 Console.WriteLine();
 
-                switch (contestantFavSubject)
+                switch (contestantFavSubject)  //could use contestantFavSubject.ToLower() to read both upper and lower case
                 {
                     case "M":
+                    //case "math": to read either response to the question
                         Console.WriteLine("Congrats, you've won a free course on Theoretical Equations!!!");
                         break;
                     case "S":
@@ -76,7 +79,11 @@ namespace SelectionStatementsExcercise
                         Console.WriteLine("You recieve no reward this attempt. Re-enter to try again.");
                         break;
 
+
                 }
+
+                // could use do-while loop around if statement to continue guessing if != to favoriteNumber
+                // add ReadLine inside of the do-while loop, declare it outside though
 
                 Console.WriteLine();
                 Console.WriteLine("Thanks for playing!");
